@@ -12,33 +12,30 @@ public class Tables {
 
 		String sql;
 
-		sql = "CREATE SCHEMA javaTeamProject128";
+		sql = "CREATE SCHEMA javaTeamProject129";
 		statement.executeUpdate(sql);
 
-		sql = "USE javaTeamProject128";
+		sql = "USE javaTeamProject129";
 		statement.executeUpdate(sql);
 
 		String createTableSQL1 = "CREATE TABLE IF NOT EXISTS Employee_details (" + "id INTEGER not NULL, "
 				+ " name VARCHAR(255), " + " employeeTeam VARCHAR(255), " + " PRIMARY KEY ( id ))";
 		statement.executeUpdate(createTableSQL1);
 
-		
 		String createTableSQL2 = "CREATE TABLE IF NOT EXISTS Task_details (" + "taskId INTEGER not NULL, "
 				+ " taskName VARCHAR(255), " + " PRIMARY KEY ( taskId ))";
 		statement.executeUpdate(createTableSQL2);
-		
-		
+
 		String createTableSQL3 = "CREATE TABLE IF NOT EXISTS Team_details (" + "teamId INTEGER not NULL, "
-				+ " teamName VARCHAR(255), " + " teamMembers VARCHAR(255), " +  " PRIMARY KEY ( teamId ))";
+				+ " teamName VARCHAR(255), " + " teamMembers VARCHAR(255), " + " PRIMARY KEY ( teamId ))";
 		statement.executeUpdate(createTableSQL3);
-		
-		
+
 		String createTableSQL4 = "CREATE TABLE IF NOT EXISTS TeamTask_details (" + "teamTaskId INTEGER not NULL, "
 				+ " teamTaskName VARCHAR(255), " + " Team VARCHAR(255), " + " PRIMARY KEY ( teamTaskId ))";
 		statement.executeUpdate(createTableSQL4);
-		
-		String createTableSQL0 = ("CREATE TABLE IF NOT EXISTS Contacts_details " +
-                " (name TEXT, phone INTEGER, email TEXT)");
+
+		String createTableSQL0 = ("CREATE TABLE IF NOT EXISTS Contacts_details "
+				+ " (name TEXT, phone INTEGER, email TEXT)");
 
 		statement.executeUpdate(createTableSQL0);
 
@@ -59,10 +56,9 @@ public class Tables {
 					results.getString("name") + " " + results.getInt("phone") + " " + results.getString("email"));
 			;
 		}
-		
-		System.out.println(" ............... Connection to Database Successful .............. ");	
-		
-	}
 
+		System.out.println(" ............... Connection to Database Successful .............. ");
+
+	}
 
 }

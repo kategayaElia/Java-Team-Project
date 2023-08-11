@@ -1,22 +1,22 @@
 package models;
 
 public class Employee {
-    
+
 	public static final String PERSONFILE = null;
 
 	private String id;
-	
-	private String  name;
-	
-    private String employeeTeam;
-    
-    public Employee() {
-    	
-    }
-    
-    public Employee(String name) {
-    	this.name = name;
-    }
+
+	private String name;
+
+	private String employeeTeam;
+
+	public Employee() {
+
+	}
+
+	public Employee(String name) {
+		this.name = name;
+	}
 
 	public Employee(String id, String name, String employeeTeam) {
 
@@ -51,6 +51,6 @@ public class Employee {
 
 	public static String getPersonfile() {
 		return PERSONFILE;
-	} 
-    
+	}
+
 }

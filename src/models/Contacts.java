@@ -3,13 +3,13 @@ package models;
 public class Contacts {
 
 	private String id;
-	
-	private String  name;
-	
-    private String email;
+
+	private String name;
+
+	private String email;
 
 	public Contacts() {
-		
+
 	}
 
 	public String getId() {
@@ -35,5 +35,5 @@ public class Contacts {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-    
+
 }

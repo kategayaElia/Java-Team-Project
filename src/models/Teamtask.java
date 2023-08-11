@@ -3,16 +3,16 @@ package models;
 public class Teamtask {
 
 	private int teamTaskId;
-	
+
 	private String teamTaskName;
-	
+
 	private Team task;
 
-	public Teamtask() {	
-		
-	} 
-    
-	public Teamtask (String teamTaskName) {			
+	public Teamtask() {
+
+	}
+
+	public Teamtask(String teamTaskName) {
 		this.teamTaskName = teamTaskName;
 	}
 
@@ -46,5 +46,5 @@ public class Teamtask {
 	public void setTask(Team task) {
 		this.task = task;
 	}
-		
+
 }
